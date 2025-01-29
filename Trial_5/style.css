@@ -1,0 +1,49 @@
+body {
+    margin: 0%;
+    background-color: rgb(45, 46, 45)
+}
+
+.navbar {
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 30px;
+    color: white;
+}
+
+.adress {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.logo {
+    border-radius: 50%;
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 1513px;
+}

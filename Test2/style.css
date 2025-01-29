@@ -1,0 +1,57 @@
+.nav_parent {
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    background-color: black;
+    margin: 0%;
+    padding: 15px 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav_parent a{
+    color: white;
+    background-color: aqua;
+    margin: 5px 5px 5px 5px;
+    padding: 15px 15px 15px 15px;
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    padding: 0px;
+}
+.parent {
+    margin-top: 0px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.parent .child {
+    border-style: solid;
+    border-color: red;
+    border-radius: 20px;
+}
+
+.body_parent {
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 20px;
+    border-color: tomato;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 50px 50px 50px;
+}
+
+.body_child {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 20px;
+    display: flexbox;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+}

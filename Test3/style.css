@@ -1,0 +1,22 @@
+img {
+    width: 100px;
+}
+
+header {
+    dispsl  
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.card div {
+    border-style: solid;
+    border-color: brown;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: blue;
+}

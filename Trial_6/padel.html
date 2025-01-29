@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel League</title>
+    <link rel="stylesheet" href="padel.css">
+    <script src="padel.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo_ref">
+                <img src="sign up.jpg" alt="Logo">
+                <a class="navlogo" href="#">PadelMauritius.com</a>
+            </div>
+            <ul class="navigator">
+                <li><a href="register.html">Register</a></li>
+                <li><a href="ranking.html">Rankings</a></li>
+                <li><a href="#future-events">Future Tournaments</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Past Tournaments Carousel -->
+    <section id="past-tournaments" class="section">
+        <h2>Past Tournaments</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel-past-tournaments">
+                <div class="carousel-item">
+                    <a href="tournament1.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\451302468_7773268369424669_7403424146898459712_n.jpg" alt="Tournament 1">
+                        <p>Urban Sports Club</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="tournament2.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\Web Img\IMG-20250119-WA0024.jpg" alt="Tournament 2">
+                        <p>RM Club</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="tournament3.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\Web Img\IMG-20250119-WA0029.jpg" alt="Tournament 3">
+                        <p>Isla Padel</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="tournament4.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\Web Img\IMG-20250119-WA0026.jpg" alt="Tournament 3">
+                        <p>Labourdonais Sports Club</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="tournament5.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\Web Img\IMG-20250119-WA0028.jpg" alt="Tournament 3">
+                        <p>Sparc</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="tournament5.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\Web Img\IMG-20250119-WA0027.jpg" alt="Tournament 3">
+                        <p>Sparc</p>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="tournament5.html">
+                        <img src="C:\Users\mathi\OneDrive\Desktop\Web Img\IMG-20250119-WA0030.jpg" alt="Tournament 3">
+                        <p>Sparc</p>
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel('past-tournaments', -1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveCarousel('past-tournaments', 1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Tournament Details Page -->
+    <div id="tournament-details" class="hidden">
+        <h2 id="tournament-title"></h2>
+
+        <!-- Tournament Day Photos Carousel -->
+        <div class="carousel-container">
+            <div class="carousel" id="carousel-tournament-photos">
+                <!-- Example Photos -->
+                <div class="carousel-item"><img src="images/tournament-photos/photo1.jpg" alt="Photo 1"></div>
+                <div class="carousel-item"><img src="images/tournament-photos/photo2.jpg" alt="Photo 2"></div>
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel('tournament-photos', -1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveCarousel('tournament-photos', 1)">&#10095;</button>
+        </div>
+
+        <!-- Tournament Rankings -->
+        <div class="rankings">
+            <h3>Rankings</h3>
+            <div class="ranking-list">
+                <div class="team">
+                    <p><strong>1st Place:</strong> John Doe & Mike Smith</p>
+                </div>
+                <div class="team">
+                    <p><strong>2nd Place:</strong> Peter Smith & Alex Johnson</p>
+                </div>
+                <div class="team">
+                    <p><strong>3rd Place:</strong> Jane Doe & Emily Brown</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Future Tournaments Calendar -->
+    <section id="future-events" class="section">
+        <div class="calendar">
+            <div class="calendar-header">
+                <button class="prev-month" onclick="changeMonth(-1)">&#10094;</button>
+                <h2 id="month-year"></h2>
+                <button class="next-month" onclick="changeMonth(1)">&#10095;</button>
+            </div>
+            <div class="calendar-body">
+                <div class="days-of-week">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-dates" id="calendar-dates"></div>
+            </div>
+        </div>
+        <script src="clock.js"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Padel League. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
